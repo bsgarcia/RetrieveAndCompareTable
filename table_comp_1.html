@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel=stylesheet href=table.css> -->
+    <style>
+        .styled-table {
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            border-collapse: collapse;
+            border-radius: .4em .4em 0 0;
+            overflow: hidden;
+            box-shadow: 0px 0px 1.5px .5px rgba(0, 0, 0, 0.15);
+        }
+
+        .styled-table thead tr {
+            background-color: #444A58;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+            text-align:center;
+        }
+
+        .align-right {
+           text-align: right; 
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #444A58;
+        }
+
+        .styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #444A58;
+        }
+
+        /* For converting to PDF */
+        body {
+            width: 3600mm;
+            /* A4 dimension */
+        }
+
+        @page {
+            margin: 0;
+            padding: 0;
+        }
+        .phase {
+            background: #C1DDEF;
+            color: white;
+            display: inline-block;
+            border-radius: 18%;
+            border-top-left-radius: 8%;
+            border-top-right-radius: 8%;
+            border-bottom-right-radius: 8%;
+            border-bottom-left-radius: 8%;
+            width: 17px;
+            height: 17px;
+            margin: 1.5px;
+            padding: 0 5px;
+            text-align: center;
+        }
+
+        .LE {
+            background: #8EC5F2;
+        }
+        .ES {
+            background:#EAA181;
+        }
+        .EE {
+            background: #77C8A4;
+        }
+        .SP {
+            background:#C28CA7 ;
+        }
+
+        .EA_SA {
+
+            background: #494850;
+            width: 42px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class=styled-table>
+    <thead>
+        <th>Exp.</th>
+        <th>Low LE</th>
+        <th>High LE</th>
+        <th>% difference LE</th>
+        <th>Low ES</th>
+        <th>High ES</th>
+        <th>% difference ES</th>
+        <th>t-test ES (bonf. corr.)</th>
+    </thead>
+   
+    <tr>
+        <td>1</td>
+        <td>55</td>
+        <td>77.2</td>
+        <td>22.2</td>
+        <td>78.9</td>
+        <td>82.5</td>
+        <td>3.6</td>
+        <td>T=1.88; P=0.5</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>63.2</td>
+        <td>79.8</td>
+        <td>16.6</td>
+        <td>80.4</td>
+        <td>83.2</td>
+        <td>2.9</td>
+        <td>T=3.26; P=0.02; *</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>71.7</td>
+        <td>93.3</td>
+        <td>21.6</td>
+        <td>81.2</td>
+        <td>86.3</td>
+        <td>5.1</td>
+        <td>T=2.73; P=0.058</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>64.9</td>
+        <td>93.5</td>
+        <td>28.6</td>
+        <td>83.5</td>
+        <td>88.2</td>
+        <td>4.6</td>
+        <td>T=3.29;P=0.01;*</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>73.7</td>
+        <td>92.8</td>
+        <td>19</td>
+        <td>82.8</td>
+        <td>85.9</td>
+        <td>3.1</td>
+        <td>T=1.82;P=0.5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>69.7</td>
+        <td>93</td>
+        <td>23.3</td>
+        <td>82.1</td>
+        <td>87.7</td>
+        <td>5.6</td>
+        <td>T=3.63;P=0.0004;***</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>78.6</td>
+        <td>96.7</td>
+        <td>18.1</td>
+        <td>59.6</td>
+        <td>66.7</td>
+        <td>7.1</td>
+        <td>T=2.53;P=0.11</td>
+    </tr>
+    <tr>
+        <td>all</td>
+        <td>68.1</td>
+        <td>89.4</td>
+        <td>21.3</td>
+        <td>78.3</td>
+        <td>82.9</td>
+        <td>4.5</td>
+        <td>T=1.96;P=0.049;*</td>
+    </tr>
+</table>
+  
+</body>
+
+</html>

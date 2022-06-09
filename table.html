@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="table.css"> -->
+    <style>
+        .styled-table {
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            border-collapse: collapse;
+            border-radius: .4em .4em 0 0;
+            overflow: hidden;
+            box-shadow: 0px 0px 1.5px .5px rgba(0, 0, 0, 0.15);
+        }
+
+        .styled-table thead tr {
+            background-color: #444A58;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #444A58;
+        }
+
+        .styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #444A58;
+        }
+
+        /* For converting to PDF */
+        body {
+            width: 3600mm;
+            /* A4 dimension */
+        }
+
+        @page {
+            margin: 0;
+            padding: 0;
+        }
+        .phase {
+            background: #C1DDEF;
+            color: white;
+            display: inline-block;
+            border-radius: 18%;
+            border-top-left-radius: 8%;
+            border-top-right-radius: 8%;
+            border-bottom-right-radius: 8%;
+            border-bottom-left-radius: 8%;
+            width: 17px;
+            height: 17px;
+            margin: 1.5px;
+            padding: 0 5px;
+            text-align: center;
+        }
+
+        .LE {
+            background: #8EC5F2;
+        }
+        .ES {
+            background:#EAA181;
+        }
+        .EE {
+            background: #77C8A4;
+        }
+        .SP {
+            background:#C28CA7 ;
+        }
+
+        .EA_SA {
+
+            background: #494850;
+            width: 42px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Exp.</th>
+                <th>Outcome (LE)</th>
+                <th>Structure (LE)</th>
+                <th>Decision problems (LE)</th>
+                <th>Phases</th>
+                <th>Sessions</th>
+                <th>N</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>partial</td>
+                <td>interleaved</td>
+                <td>4</td>
+                <td><span class="phase LE">LE</span><span class="phase ES">ES</span><span class="phase SP">SP</span></td>
+                <td>1</td>
+                <td>76</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>partial</td>
+                <td>blocked</td>
+                <td>4</td>
+                <td><span class="phase LE">LE</span><span class="phase ES">ES</span><span class="phase SP">SP</span></td>
+                <td>1</td>
+                <td>71</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>complete</td>
+                <td>blocked</td>
+                <td>4</td>
+                <td><span class="phase LE">LE</span><span class="phase ES">ES</span><span class="phase SP">SP</span></td>
+                <td>1</td>
+                <td>83</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>complete</td>
+                <td>blocked</td>
+                <td>2</td>
+                <td><span class="phase LE">LE</span><span class="phase ES">ES</span><span class="phase SP">SP</span></td>
+                <td>1</td>
+                <td>88</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>complete</td>
+                <td>blocked</td>
+                <td>4</td>
+                <td><span class="phase LE">LE</span><span class="phase ES">ES</span><span class="phase EE">EE</span><span class="phase SP">SP</span></td>
+                <td>1</td>
+                <td>71</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>complete</td>
+                <td>blocked</td>
+                <td>4</td>
+                <td><span class="phase LE">LE</span><span class="phase ES">ES</span><span class="phase EE">EE</span><span class="phase SP">SP</span></td>
+                <td>2</td>
+                <td>66</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>complete</td>
+                <td>blocked</td>
+                <td>4</td>
+                <td><span class="phase LE">LE</span><span class="phase ES">ES</span><span class="phase EE">EE</span><span class="phase SP">SP</span></td>
+                <td>2</td>
+                <td>71</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>complete</td>
+                <td>blocked</td>
+                <td>4</td>
+                <td><span class="phase LE">LE</span><span class="phase ES">ES</span><span class="phase EE">EE</span><span class="phase SP">SP</span><span class="phase EA_SA">EA/SA</span></td>
+                <td>2</td>
+                <td>73</td>
+            </tr>
+
+            <!-- and so on... -->
+        </tbody>
+    </table>
+
+</body>
+
+</html>
